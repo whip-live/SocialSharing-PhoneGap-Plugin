@@ -281,8 +281,6 @@ public class SocialSharing extends CordovaPlugin {
 
         final PendingIntent pendingIntent = pendingIntentTemp;
 
-        sendIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
-
         try {
           if (files.length() > 0 && !"".equals(files.getString(0))) {
             final String dir = getDownloadDir();
